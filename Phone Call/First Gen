@@ -1,12 +1,15 @@
-import random
+# phone_call.py
+
+import os
 
 def make_call():
-    # generate a random phone number
-    phone_number = '+919711900610' # str(random.randint(200, 999)) + str(random.randint(100, 999)) + str(random.randint(1000, 9999))
-    
-    # make the call using the virtual phone number
-    virtual_number = '18447859654'
-    # replace the virtual number with your own virtual number
-    # use your favorite Python library for making calls here
-    
-    print('Calling ' + phone_number + ' using virtual number ' + virtual_number)
+    # Default phone number to call (replace with your number)
+    default_number = "+919953458541"
+
+    # Construct the command (this example uses termux or os call)
+    os.system(f"termux-telephony-call {default_number}")
+
+    print("Calling:", default_number)
+
+if __name__ == "__main__":
+    make_call()
