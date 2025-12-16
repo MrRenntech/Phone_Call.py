@@ -1,0 +1,20 @@
+Phone Call Script Usage
+=======================
+
+Prerequisites:
+1. Install 'Termux' and 'Termux:API' on your Android device from F-Droid or Play Store.
+2. Open Termux and run: `pkg install termux-api python`
+
+Running the script:
+1. Run with python directly:
+   python phone_call.py
+
+2. Run with a specific number:
+   python phone_call.py +1234567890
+
+3. On Windows (Testing):
+   Double-click `run.bat` to launch the script in a terminal window.
+
+Note:
+The actual dialing functionality only works on Android devices setup with Termux.
+On other systems, it will simulate the call command.

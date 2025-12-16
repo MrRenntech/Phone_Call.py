@@ -1,0 +1,10 @@
+# Requirements for Phone Call Script
+
+# This script relies on the standard library.
+# No external pip packages are strictly required basic usage.
+# However, for development or linting, you might want:
+# pylint
+# black
+
+# The Runtime Requirement is:
+# Termux:API (Android App + Package)
