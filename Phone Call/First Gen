@@ -1,0 +1,15 @@
+# phone_call.py
+
+import os
+
+def make_call():
+    # Default phone number to call (replace with your number)
+    default_number = "+919953458541"
+
+    # Construct the command (this example uses termux or os call)
+    os.system(f"termux-telephony-call {default_number}")
+
+    print("Calling:", default_number)
+
+if __name__ == "__main__":
+    make_call()
